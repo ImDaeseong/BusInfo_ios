@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BusInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNn-VU-9gN">
+                                <rect key="frame" x="172" y="388" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="mT1-QQ-dYF" kind="presentation" id="ksh-2l-YKB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246.37681159420291" y="69.642857142857139"/>
+        </scene>
+        <!--Tab 1view-->
+        <scene sceneID="4kA-8f-lUM">
+            <objects>
+                <viewController storyboardIdentifier="tab1view" id="Bs2-34-p7U" customClass="tab1view" customModule="BusInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NOD-3e-j3I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HQY-Ez-LDn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIs-Z9-gi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413.04347826086962" y="69.642857142857139"/>
+        </scene>
+        <!--Tab 2view-->
+        <scene sceneID="cOS-Nj-vyw">
+            <objects>
+                <viewController storyboardIdentifier="tab2view" id="vGU-eU-zHf" customClass="tab2view" customModule="BusInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ylY-ta-oNc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Znj-0o-alL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4P-cR-6gk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="70"/>
+        </scene>
+        <!--Tab 3view-->
+        <scene sceneID="AUJ-SL-fap">
+            <objects>
+                <viewController storyboardIdentifier="tab3view" id="3Z1-Tm-obX" customClass="tab3view" customModule="BusInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N0t-kR-X0N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vwB-qb-QTw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tam-2Y-Epb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="70"/>
+        </scene>
+        <!--Tab 4view-->
+        <scene sceneID="AxY-gT-QF8">
+            <objects>
+                <viewController storyboardIdentifier="tab4view" id="mT1-QQ-dYF" customClass="tab4view" customModule="BusInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTE-KI-pj2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="버스번호를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JgM-BM-vAb" userLabel="textfield" customClass="TextFieldEx" customModule="BusInfo">
+                                <rect key="frame" x="5" y="5" width="344" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iBO-ha-MpK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Am-RL-oD1" userLabel="btnSearch" customClass="ButtonEx" customModule="BusInfo">
+                                <rect key="frame" x="359" y="5" width="50" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="RG5-ay-ujs"/>
+                                    <constraint firstAttribute="height" constant="40" id="rhT-hr-uEB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="txtTitle" value="검색"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSearch_click:" destination="mT1-QQ-dYF" eventType="touchUpInside" id="xp6-VO-EdU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFz-Dh-634" customClass="line" customModule="BusInfo">
+                                <rect key="frame" x="5" y="50" width="404" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Kbu-XC-igI"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BoY-bI-swe" userLabel="tableview">
+                                <rect key="frame" x="5" y="56" width="404" height="747"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yz1-2I-XYT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Am-RL-oD1" firstAttribute="top" secondItem="Yz1-2I-XYT" secondAttribute="top" constant="5" id="7pL-3e-4Jc"/>
+                            <constraint firstItem="Yz1-2I-XYT" firstAttribute="bottom" secondItem="BoY-bI-swe" secondAttribute="bottom" constant="5" id="C6O-kJ-aeE"/>
+                            <constraint firstItem="4Am-RL-oD1" firstAttribute="leading" secondItem="JgM-BM-vAb" secondAttribute="trailing" constant="10" id="Cwe-Gi-QFr"/>
+                            <constraint firstItem="zFz-Dh-634" firstAttribute="top" secondItem="JgM-BM-vAb" secondAttribute="bottom" constant="5" id="Vvs-lE-uaJ"/>
+                            <constraint firstItem="JgM-BM-vAb" firstAttribute="top" secondItem="Yz1-2I-XYT" secondAttribute="top" constant="5" id="cNS-zy-PqF"/>
+                            <constraint firstItem="Yz1-2I-XYT" firstAttribute="trailing" secondItem="BoY-bI-swe" secondAttribute="trailing" constant="5" id="f0O-Rq-4Jk"/>
+                            <constraint firstItem="BoY-bI-swe" firstAttribute="top" secondItem="zFz-Dh-634" secondAttribute="bottom" constant="5" id="fUT-Rz-xeM"/>
+                            <constraint firstItem="JgM-BM-vAb" firstAttribute="leading" secondItem="Yz1-2I-XYT" secondAttribute="leading" constant="5" id="kTD-rI-tbs"/>
+                            <constraint firstItem="zFz-Dh-634" firstAttribute="leading" secondItem="Yz1-2I-XYT" secondAttribute="leading" constant="5" id="sz1-mU-Mb5"/>
+                            <constraint firstItem="BoY-bI-swe" firstAttribute="leading" secondItem="Yz1-2I-XYT" secondAttribute="leading" constant="5" id="t6C-bb-Yoo"/>
+                            <constraint firstItem="Yz1-2I-XYT" firstAttribute="trailing" secondItem="4Am-RL-oD1" secondAttribute="trailing" constant="5" id="udZ-3g-x7f"/>
+                            <constraint firstItem="Yz1-2I-XYT" firstAttribute="trailing" secondItem="zFz-Dh-634" secondAttribute="trailing" constant="5" id="wKP-ce-sU4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview1" destination="BoY-bI-swe" id="WWk-ah-d2N"/>
+                        <outlet property="textfield" destination="JgM-BM-vAb" id="K7r-n1-jfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7b-2F-nWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2380" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
