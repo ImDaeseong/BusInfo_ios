@@ -33,7 +33,7 @@ class ButtonEx : UIButton {
             
         } else if state == .selected {
             
-            setTitleShadowColor(UIColor.white, for: UIControl.State.selected)
+            setTitleColor(UIColor.white, for: UIControl.State.selected)
         }
     }
     

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		787FCECF50FC995543103B57 /* Pods_BusInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAC1FF2E88DEB3D630D58A1 /* Pods_BusInfo.framework */; };
+		A12FF48C25A1836C009ED43D /* item1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FF48A25A1836C009ED43D /* item1Cell.swift */; };
+		A12FF48D25A1836C009ED43D /* item1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12FF48B25A1836C009ED43D /* item1Cell.xib */; };
+		A12FF49325A1A380009ED43D /* tabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FF49225A1A380009ED43D /* tabCell.swift */; };
 		A1364C0025A028430048C32C /* ButtonEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1364BFF25A028430048C32C /* ButtonEx.swift */; };
 		A1364C0325A029560048C32C /* tab1view.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1364C0225A029560048C32C /* tab1view.swift */; };
 		A1364C0625A029A20048C32C /* tab2view.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1364C0525A029A20048C32C /* tab2view.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		0763DCC430E92F1E4B1F3A10 /* Pods-BusInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusInfo.release.xcconfig"; path = "Target Support Files/Pods-BusInfo/Pods-BusInfo.release.xcconfig"; sourceTree = "<group>"; };
+		A12FF48A25A1836C009ED43D /* item1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item1Cell.swift; sourceTree = "<group>"; };
+		A12FF48B25A1836C009ED43D /* item1Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = item1Cell.xib; sourceTree = "<group>"; };
+		A12FF49225A1A380009ED43D /* tabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabCell.swift; sourceTree = "<group>"; };
 		A1364BFF25A028430048C32C /* ButtonEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx.swift; sourceTree = "<group>"; };
 		A1364C0225A029560048C32C /* tab1view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab1view.swift; sourceTree = "<group>"; };
 		A1364C0525A029A20048C32C /* tab2view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab2view.swift; sourceTree = "<group>"; };
@@ -135,6 +141,9 @@
 				A1364C4B25A048A40048C32C /* UIColor.swift */,
 				A1364C4F25A055410048C32C /* item4Cell.swift */,
 				A1364C5025A055410048C32C /* item4Cell.xib */,
+				A12FF48A25A1836C009ED43D /* item1Cell.swift */,
+				A12FF48B25A1836C009ED43D /* item1Cell.xib */,
+				A12FF49225A1A380009ED43D /* tabCell.swift */,
 			);
 			path = BusInfo;
 			sourceTree = "<group>";
@@ -210,6 +219,7 @@
 				A13AF1F4259EF93100A965CA /* LaunchScreen.storyboard in Resources */,
 				A1364C5225A055410048C32C /* item4Cell.xib in Resources */,
 				A13AF1F1259EF93100A965CA /* Assets.xcassets in Resources */,
+				A12FF48D25A1836C009ED43D /* item1Cell.xib in Resources */,
 				A13AF1EF259EF93100A965CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,8 +279,10 @@
 				A1364C4525A048560048C32C /* TextFieldEx.swift in Sources */,
 				A137D036259F447B001A32E6 /* getArrInfoByRouteAllAPI.swift in Sources */,
 				A13AF1EC259EF93100A965CA /* ViewController.swift in Sources */,
+				A12FF49325A1A380009ED43D /* tabCell.swift in Sources */,
 				A1364C0925A029B40048C32C /* tab3view.swift in Sources */,
 				A1364C0025A028430048C32C /* ButtonEx.swift in Sources */,
+				A12FF48C25A1836C009ED43D /* item1Cell.swift in Sources */,
 				A1364C0325A029560048C32C /* tab1view.swift in Sources */,
 				A137D033259F4191001A32E6 /* getArrInfomainAPI.swift in Sources */,
 				A13AF20D259F015B00A965CA /* BusAPIKey.swift in Sources */,

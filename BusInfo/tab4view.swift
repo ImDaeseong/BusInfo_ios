@@ -81,7 +81,6 @@ class tab4view: UIViewController {
         self.textfield.resignFirstResponder()
         self.textfield.text = ""
     }
-    
 }
 
 extension tab4view : cellDelegate {
@@ -93,7 +92,11 @@ extension tab4view : cellDelegate {
         if let index = indexPath?.row {
             
             let busRouteId : String = self.getBusRouteListDataList[index].busRouteId!
-            print("didClickImageView:\(busRouteId)")
+            
+            if busRouteId != "" {
+                UIPasteboard.general.string = busRouteId
+                //print(UIPasteboard.general.string!)
+            }
         }
     }
     
@@ -104,7 +107,12 @@ extension tab4view : cellDelegate {
         if let index = indexPath?.row {
             
             let busRouteId : String = self.getBusRouteListDataList[index].busRouteId!
-            print("didClickroundbackground:\(busRouteId)")
+            
+            if busRouteId != "" {
+                UIPasteboard.general.string = busRouteId
+                //print(UIPasteboard.general.string!)
+                
+            }
         }
     }
 }
