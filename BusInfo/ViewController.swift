@@ -1,7 +1,10 @@
 
 import UIKit
+import SideMenu
 
 class ViewController: UIViewController {
+    
+    var sideMenu : SideMenuNavigationController!
     
     @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var tabmenuview: UICollectionView!
@@ -21,7 +24,9 @@ class ViewController: UIViewController {
         
         initTabMenu()
         
-        initContentview()
+        initswipe()
+        
+        initsideMenu()
     }
     
     private func initToolbar(){
@@ -45,7 +50,7 @@ class ViewController: UIViewController {
         SelecttabIndex(selectIndex: selectIndex)
     }
     
-    private func initContentview(){
+    private func initswipe(){
         
         swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeGesture(_:)))
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
@@ -91,6 +96,36 @@ class ViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    private func initsideMenu() {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "menuViewController") as! menuViewController
+        vc.delegate = self
+        
+        sideMenu = SideMenuNavigationController(rootViewController: vc)
+        sideMenu.leftSide = true
+        sideMenu.sideMenuDelegate = self
+        sideMenu.menuWidth = self.view.bounds.width * 0.8
+        sideMenu.presentationStyle = .menuSlideIn //이게 없으면 메뉴 버튼 오른쪽을 밀려남
+        SideMenuManager.default.leftMenuNavigationController = sideMenu
+        SideMenuManager.default.leftMenuNavigationController?.setNavigationBarHidden(true, animated: true)//상단 상태바 숨김
+    }
+    
+    @IBAction func menu_click(_ sender: UIBarButtonItem) {
+        present(sideMenu, animated: true)
+    }
+    
+    func changetab(index : Int){
+        
+        //현재탭
+        tabmenuview.reloadItems(at: [IndexPath(item: selectIndex, section: 0)])
+        
+        //선택탭
+        selectIndex = index
+        tabmenuview.reloadItems(at: [IndexPath(item: selectIndex, section: 0)])
+        
+        SelecttabIndex(selectIndex: selectIndex)
     }
 }
 
@@ -177,5 +212,35 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
         return 0.5
+    }
+}
+
+extension ViewController : MenuViewControllerDelegate {
+    
+    func didselectedMenu(index : Int){
+        
+        sideMenu.dismiss(animated: true, completion: nil)
+        
+        //첫번째 탭으로 이동
+        changetab(index: 0)
+    }
+}
+
+extension ViewController: SideMenuNavigationControllerDelegate {
+
+    func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
+        //print("sideMenuWillAppear")
+    }
+
+    func sideMenuDidAppear(menu: SideMenuNavigationController, animated: Bool) {
+        //print("sideMenuDidAppear")
+    }
+
+    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
+        //print("sideMenuWillDisappear")
+    }
+
+    func sideMenuDidDisappear(menu: SideMenuNavigationController, animated: Bool) {
+        //print("sideMenuDidDisappear")
     }
 }

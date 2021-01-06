@@ -11,6 +11,8 @@
 		A12FF48C25A1836C009ED43D /* item1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FF48A25A1836C009ED43D /* item1Cell.swift */; };
 		A12FF48D25A1836C009ED43D /* item1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12FF48B25A1836C009ED43D /* item1Cell.xib */; };
 		A12FF49325A1A380009ED43D /* tabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FF49225A1A380009ED43D /* tabCell.swift */; };
+		A13526FE25A595D600C787F5 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13526FD25A595D600C787F5 /* menuViewController.swift */; };
+		A135270125A5962F00C787F5 /* roundborder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A135270025A5962F00C787F5 /* roundborder.swift */; };
 		A1364C0025A028430048C32C /* ButtonEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1364BFF25A028430048C32C /* ButtonEx.swift */; };
 		A1364C0325A029560048C32C /* tab1view.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1364C0225A029560048C32C /* tab1view.swift */; };
 		A1364C0625A029A20048C32C /* tab2view.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1364C0525A029A20048C32C /* tab2view.swift */; };
@@ -43,6 +45,8 @@
 		A12FF48A25A1836C009ED43D /* item1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item1Cell.swift; sourceTree = "<group>"; };
 		A12FF48B25A1836C009ED43D /* item1Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = item1Cell.xib; sourceTree = "<group>"; };
 		A12FF49225A1A380009ED43D /* tabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabCell.swift; sourceTree = "<group>"; };
+		A13526FD25A595D600C787F5 /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+		A135270025A5962F00C787F5 /* roundborder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundborder.swift; sourceTree = "<group>"; };
 		A1364BFF25A028430048C32C /* ButtonEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx.swift; sourceTree = "<group>"; };
 		A1364C0225A029560048C32C /* tab1view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab1view.swift; sourceTree = "<group>"; };
 		A1364C0525A029A20048C32C /* tab2view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab2view.swift; sourceTree = "<group>"; };
@@ -128,22 +132,24 @@
 				A13AF20F259F01FB00A965CA /* getBusRouteListAPI.swift */,
 				A137D032259F4191001A32E6 /* getArrInfomainAPI.swift */,
 				A137D035259F447B001A32E6 /* getArrInfoByRouteAllAPI.swift */,
+				A13526FD25A595D600C787F5 /* menuViewController.swift */,
 				A1364C0225A029560048C32C /* tab1view.swift */,
 				A1364C0525A029A20048C32C /* tab2view.swift */,
 				A1364C0825A029B40048C32C /* tab3view.swift */,
 				A1364C0B25A029C10048C32C /* tab4view.swift */,
-				A1364BFF25A028430048C32C /* ButtonEx.swift */,
-				A1364C4425A048560048C32C /* TextFieldEx.swift */,
-				A1364C5E25A05E030048C32C /* LabelEx.swift */,
-				A1364C4725A0488B0048C32C /* line.swift */,
-				A1364C5425A059A00048C32C /* tableline.swift */,
-				A1364C5725A05A3B0048C32C /* roundbackground.swift */,
-				A1364C4B25A048A40048C32C /* UIColor.swift */,
 				A1364C4F25A055410048C32C /* item4Cell.swift */,
 				A1364C5025A055410048C32C /* item4Cell.xib */,
 				A12FF48A25A1836C009ED43D /* item1Cell.swift */,
 				A12FF48B25A1836C009ED43D /* item1Cell.xib */,
 				A12FF49225A1A380009ED43D /* tabCell.swift */,
+				A1364C5425A059A00048C32C /* tableline.swift */,
+				A1364C4B25A048A40048C32C /* UIColor.swift */,
+				A1364C4725A0488B0048C32C /* line.swift */,
+				A1364C5E25A05E030048C32C /* LabelEx.swift */,
+				A1364C4425A048560048C32C /* TextFieldEx.swift */,
+				A1364BFF25A028430048C32C /* ButtonEx.swift */,
+				A1364C5725A05A3B0048C32C /* roundbackground.swift */,
+				A135270025A5962F00C787F5 /* roundborder.swift */,
 			);
 			path = BusInfo;
 			sourceTree = "<group>";
@@ -288,12 +294,14 @@
 				A13AF20D259F015B00A965CA /* BusAPIKey.swift in Sources */,
 				A13AF1E8259EF93100A965CA /* AppDelegate.swift in Sources */,
 				A1364C0C25A029C10048C32C /* tab4view.swift in Sources */,
+				A13526FE25A595D600C787F5 /* menuViewController.swift in Sources */,
 				A1364C4C25A048A40048C32C /* UIColor.swift in Sources */,
 				A1364C5F25A05E030048C32C /* LabelEx.swift in Sources */,
 				A13AF1EA259EF93100A965CA /* SceneDelegate.swift in Sources */,
 				A13AF207259EFD2D00A965CA /* getArrInfoByRouteAllData.swift in Sources */,
 				A1364C5825A05A3B0048C32C /* roundbackground.swift in Sources */,
 				A13AF20A259EFD9800A965CA /* getBusRouteListData.swift in Sources */,
+				A135270125A5962F00C787F5 /* roundborder.swift in Sources */,
 				A1364C4825A0488B0048C32C /* line.swift in Sources */,
 				A1364C5125A055410048C32C /* item4Cell.swift in Sources */,
 			);

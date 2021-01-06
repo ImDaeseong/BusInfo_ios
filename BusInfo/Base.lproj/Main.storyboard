@@ -10,6 +10,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="jcJ-YI-6to">
+            <objects>
+                <viewController storyboardIdentifier="menuViewController" id="2Xd-a8-Cbu" customClass="menuViewController" customModule="BusInfo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cMU-dx-4TY" customClass="roundborder" customModule="BusInfo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKE-qB-XMm">
+                                <rect key="frame" x="10" y="433" width="394" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="메뉴1">
+                                    <color key="titleColor" red="1" green="0.99998801950000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="menu1_click:" destination="2Xd-a8-Cbu" eventType="touchUpInside" id="Yfb-ll-7mJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u2E-oN-Xcn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yKE-qB-XMm" firstAttribute="leading" secondItem="u2E-oN-Xcn" secondAttribute="leading" constant="10" id="IGg-Lm-za0"/>
+                            <constraint firstItem="yKE-qB-XMm" firstAttribute="centerY" secondItem="cMU-dx-4TY" secondAttribute="centerY" id="Y9e-xF-9ME"/>
+                            <constraint firstItem="u2E-oN-Xcn" firstAttribute="trailing" secondItem="yKE-qB-XMm" secondAttribute="trailing" constant="10" id="s4V-mF-jHq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrQ-2N-Y3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3016" y="70"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -21,7 +53,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rt4-50-Rbf">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="eji-Jc-azI"/>
+                                    <barButtonItem title="Item" image="menu" id="eji-Jc-azI">
+                                        <connections>
+                                            <action selector="menu_click:" destination="BYZ-38-t0r" id="fnA-eu-Nob"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BmN-a3-p1u" userLabel="tabmenuview">
@@ -374,6 +410,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="menu" width="18" height="14"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

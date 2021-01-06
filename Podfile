@@ -7,5 +7,6 @@ target 'BusInfo' do
 
   pod 'Alamofire'
   pod 'SwiftyXMLParser'
+  pod 'SideMenu'
   
 end
